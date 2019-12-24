@@ -7,6 +7,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+
 import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
@@ -14,11 +18,24 @@ public class MainActivity extends AppCompatActivity {
     //criando referencias
 
     private Button butoonJogar;
+    private AdView mAdView;
+    private AdView mAdView2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        //Configurando Banner
+        MobileAds.initialize(this, "ca-app-pub-3940256099942544/6300978111");
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
+
+
+
 
         butoonJogar = findViewById(R.id.buttonJogar);
 
