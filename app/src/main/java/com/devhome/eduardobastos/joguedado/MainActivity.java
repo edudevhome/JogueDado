@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         //Configurando Banner
-        MobileAds.initialize(this, "ca-app-pub-3940256099942544/6300978111");
+        MobileAds.initialize(this, "ca-app-pub-8069899346555474/7430643825");
         mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);

@@ -9,7 +9,7 @@
 
     <ImageView
         android:id="@+id/imageViewLogo"
-        android:layout_width="398dp"
+        android:layout_width="350dp"
         android:layout_height="199dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
@@ -42,16 +42,14 @@
 
 
     <com.google.android.gms.ads.AdView
-        xmlns:ads="http://schemas.android.com/apk/res-auto"
         android:id="@+id/adView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        ads:adSize="SMART_BANNER"
-        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"
-        ads:layout_constraintBottom_toBottomOf="parent"
-        ads:layout_constraintEnd_toEndOf="parent"
-        ads:layout_constraintStart_toStartOf="parent"
-        ads:layout_constraintTop_toBottomOf="@+id/buttonJogar">
-    </com.google.android.gms.ads.AdView>
+        android:layout_marginBottom="8dp"
+        app:adSize="SMART_BANNER"
+        app:adUnitId="ca-app-pub-8069899346555474/7430643825"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
